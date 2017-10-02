@@ -1,5 +1,5 @@
-<link rel="import" href="../../polymer/polymer-element.html">
-<link rel="import" href="../../iron-icons/iron-icons.html">
+<link rel="import" href="/bower_components/polymer/polymer.html">
+<link rel="import" href="/bower_components/iron-icons/iron-icons.html">
 <link rel="import" href="../icon-toggle.html">
 
 
@@ -7,11 +7,8 @@
   <template>
     <style>
       :host {
-        --icon-toggle-color: lightgrey;
-        --icon-toggle-outline-color: black;
-        --icon-toggle-pressed-color: red;        
         font-family: sans-serif;
-      };
+      }
     </style>
   
     <h3>Statically-configured icon-toggles</h3>
@@ -27,21 +24,19 @@
     <!-- curly brackets ({{}}} allow two-way binding --> 
     <icon-toggle toggle-icon="favorite" pressed="{{isFav}}"></icon-toggle>
   </template>
-  
+
   <script>
     class DemoElement extends Polymer.Element {
-      static get is() { return "demo-element" }
-
+      static get is() { return 'demo-element' }
       _message(fav) {
         if (fav) {
-          return "You really like me!";
+          return 'You really like me!';
         } 
         else {
-          return "Do you like me?";
+          return 'Do you like me?';
         }
       }
     }
-
     customElements.define(DemoElement.is, DemoElement);
-  </script>
+    </script>
 </dom-module>
