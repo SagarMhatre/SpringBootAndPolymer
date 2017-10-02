@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ExplorerApplication {
+public class SpringBootAndPolymerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ExplorerApplication.class, args);
+		SpringApplication.run(SpringBootAndPolymerApplication.class, args);
 	}
 }
